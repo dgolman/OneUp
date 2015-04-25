@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelfieCell" rowHeight="300" id="KGk-i7-Jjw" customClass="SelfieTableViewCell" customModule="OneUp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="350"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zTm-Jt-27D">
+                        <rect key="frame" x="15" y="15" width="290" height="290"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haa-g6-qeh">
+                        <rect key="frame" x="25" y="317" width="209" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vote" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfu-yi-8ox">
+                        <rect key="frame" x="225" y="317" width="69" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="69" id="EPb-VQ-SI1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paw" translatesAutoresizingMaskIntoConstraints="NO" id="1Il-ib-Vck">
+                        <rect key="frame" x="110" y="110" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="bB9-xa-Nv1"/>
+                            <constraint firstAttribute="width" constant="100" id="rSn-IY-XsS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="haa-g6-qeh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="17" id="3Zf-Bp-6YQ"/>
+                    <constraint firstItem="zTm-Jt-27D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="9hN-uW-DrC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="haa-g6-qeh" secondAttribute="bottom" constant="3" id="9pg-dF-GuI"/>
+                    <constraint firstItem="1Il-ib-Vck" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="110" id="CaR-Ik-WbP"/>
+                    <constraint firstItem="zTm-Jt-27D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="ORJ-dF-gAH"/>
+                    <constraint firstItem="zTm-Jt-27D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="YfJ-Hj-f0t"/>
+                    <constraint firstItem="haa-g6-qeh" firstAttribute="top" secondItem="zTm-Jt-27D" secondAttribute="bottom" constant="12" id="fx7-uX-5Oi"/>
+                    <constraint firstAttribute="centerX" secondItem="1Il-ib-Vck" secondAttribute="centerX" id="gxO-bV-83x"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="haa-g6-qeh" secondAttribute="trailing" constant="78" id="hT7-KM-cdW"/>
+                    <constraint firstItem="haa-g6-qeh" firstAttribute="top" secondItem="pfu-yi-8ox" secondAttribute="top" id="xUJ-lr-gBd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="pfu-yi-8ox" secondAttribute="trailing" constant="18" id="zda-6U-LeT"/>
+                    <constraint firstItem="pfu-yi-8ox" firstAttribute="bottom" secondItem="haa-g6-qeh" secondAttribute="bottom" id="zrA-YQ-yFj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="selfieImageView" destination="zTm-Jt-27D" id="ZDf-Bv-VTu"/>
+                <outlet property="selfieNameLabel" destination="haa-g6-qeh" id="bKO-Dq-fPa"/>
+                <outlet property="selfiePawIcon" destination="1Il-ib-Vck" id="eEX-UN-F38"/>
+                <outlet property="selfieVotesLabel" destination="pfu-yi-8ox" id="T78-85-3sV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paw" width="100" height="100"/>
+    </resources>
+</document>
