@@ -10,23 +10,41 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        if ((FBSDKAccessToken.currentAccessToken()) != nil) {
-            self.performSegueWithIdentifier("SELFIES", sender: nil)
+    override func viewDidAppear(animated: Bool) {
+//        PFUser.logOut()
+        if let user = PFUser.currentUser() {
+            if let registered = user["registered"] as? Bool {
+                if (registered == true) {
+                    if FBSDKAccessToken.currentAccessToken() != nil {
+                        self.performSegueWithIdentifier("Timeline", sender: nil)
+                    } else {
+                        println("NOT VALID TOKEN")
+                    }
+                }
+            }
         }
+        
+        super.viewDidAppear(animated)
         
     }
 
     @IBAction func FBLoginPressed(sender: UIButton) {
-        PFFacebookUtils.logInInBackgroundWithReadPermissions(permissions, {
+        PFFacebookUtils.logInInBackgroundWithReadPermissions(["user_about_me"], block: {
             (user: PFUser?, error: NSError?) -> Void in
             if let user = user {
                 if user.isNew {
-                    self.performSegueWithIdentifier("SELFIES", sender: nil)
+                    self.performSegueWithIdentifier("RegisterProfile", sender: nil)
                 } else {
-                    self.performSegueWithIdentifier("SELFIES", sender: nil)
+                    var registered = user["registered"] as? Bool
+                    if registered != nil  {
+                        if (registered == true) {
+                            self.performSegueWithIdentifier("Timeline", sender: nil)
+                        } else {
+                            self.performSegueWithIdentifier("RegisterProfile", sender: nil)
+                        }
+                    } else {
+                        self.performSegueWithIdentifier("RegisterProfile", sender: nil)
+                    }
                 }
             } else {
                 println("Uh oh. The user cancelled the Facebook login.")

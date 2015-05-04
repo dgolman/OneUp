@@ -8,16 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		86F0EE36FB1617B95E19F0FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AB9A8F8D2E15A46847AB30 /* libPods.a */; };
-		FD550B1A1AEAD31200932841 /* SelfieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD550B191AEAD31200932841 /* SelfieTableViewController.swift */; };
-		FD550B1F1AEAD7B100932841 /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD550B1D1AEAD7B100932841 /* SelfieTableViewCell.swift */; };
-		FD550B201AEAD7B100932841 /* SelfieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD550B1E1AEAD7B100932841 /* SelfieTableViewCell.xib */; };
+		FD589F951AEFF7DC00FCED41 /* RegisterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589F941AEFF7DB00FCED41 /* RegisterProfileViewController.swift */; };
+		FD589F971AEFF95000FCED41 /* RegisterLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589F961AEFF95000FCED41 /* RegisterLocationViewController.swift */; };
+		FD589F9A1AF00A4F00FCED41 /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589F981AF00A4E00FCED41 /* TimelineTableViewCell.swift */; };
+		FD589F9B1AF00A4F00FCED41 /* TimelineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD589F991AF00A4E00FCED41 /* TimelineTableViewCell.xib */; };
+		FD589F9D1AF00A7300FCED41 /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589F9C1AF00A7300FCED41 /* TimelineTableViewController.swift */; };
+		FD589F9F1AF0789300FCED41 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589F9E1AF0789200FCED41 /* CameraViewController.swift */; };
+		FD589FA31AF07AA500FCED41 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD589FA21AF07AA500FCED41 /* SearchTableViewController.swift */; };
 		FDAEDD081AE9AB6A00DD14DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEDD071AE9AB6A00DD14DF /* AppDelegate.swift */; };
-		FDAEDD0A1AE9AB6A00DD14DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEDD091AE9AB6A00DD14DF /* ViewController.swift */; };
 		FDAEDD0D1AE9AB6A00DD14DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDAEDD0B1AE9AB6A00DD14DF /* Main.storyboard */; };
 		FDAEDD0F1AE9AB6A00DD14DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDAEDD0E1AE9AB6A00DD14DF /* Images.xcassets */; };
 		FDAEDD121AE9AB6A00DD14DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDAEDD101AE9AB6A00DD14DF /* LaunchScreen.xib */; };
 		FDAEDD1E1AE9AB6A00DD14DF /* OneUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEDD1D1AE9AB6A00DD14DF /* OneUpTests.swift */; };
+		FDD64B551AF6A3690097A9F8 /* TimelineCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD64B541AF6A3690097A9F8 /* TimelineCollectionViewController.swift */; };
+		FDD64B581AF6A73C0097A9F8 /* TimelineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD64B561AF6A73C0097A9F8 /* TimelineCollectionViewCell.swift */; };
+		FDD64B591AF6A73C0097A9F8 /* TimelineCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDD64B571AF6A73C0097A9F8 /* TimelineCollectionViewCell.xib */; };
+		FDDE4EEA1AF6D6CC00EDEB05 /* SelectedChallengeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE4EE91AF6D6CC00EDEB05 /* SelectedChallengeTableViewController.swift */; };
+		FDDE4EEC1AF707A800EDEB05 /* SelectedChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE4EEB1AF707A800EDEB05 /* SelectedChallengeTableViewCell.swift */; };
 		FDE0AAC11AEB2D5500A37360 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE0AAC01AEB2D5500A37360 /* LoginViewController.swift */; };
+		FDF163B91AED9F5000333B55 /* OneUpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF163B81AED9F5000333B55 /* OneUpsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +44,29 @@
 		C0AB9A8F8D2E15A46847AB30 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA88373614AA10197D27882 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD550B141AEAD23200932841 /* OneUp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneUp-Bridging-Header.h"; sourceTree = "<group>"; };
-		FD550B191AEAD31200932841 /* SelfieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewController.swift; sourceTree = "<group>"; };
-		FD550B1D1AEAD7B100932841 /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
-		FD550B1E1AEAD7B100932841 /* SelfieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelfieTableViewCell.xib; sourceTree = "<group>"; };
+		FD589F941AEFF7DB00FCED41 /* RegisterProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterProfileViewController.swift; sourceTree = "<group>"; };
+		FD589F961AEFF95000FCED41 /* RegisterLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterLocationViewController.swift; sourceTree = "<group>"; };
+		FD589F981AF00A4E00FCED41 /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
+		FD589F991AF00A4E00FCED41 /* TimelineTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineTableViewCell.xib; sourceTree = "<group>"; };
+		FD589F9C1AF00A7300FCED41 /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		FD589F9E1AF0789200FCED41 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FD589FA21AF07AA500FCED41 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		FDAEDD021AE9AB6A00DD14DF /* OneUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAEDD061AE9AB6A00DD14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDAEDD071AE9AB6A00DD14DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDAEDD091AE9AB6A00DD14DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDAEDD0C1AE9AB6A00DD14DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FDAEDD0E1AE9AB6A00DD14DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FDAEDD111AE9AB6A00DD14DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FDAEDD171AE9AB6A00DD14DF /* OneUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDAEDD1C1AE9AB6A00DD14DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDAEDD1D1AE9AB6A00DD14DF /* OneUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneUpTests.swift; sourceTree = "<group>"; };
+		FDD64B541AF6A3690097A9F8 /* TimelineCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCollectionViewController.swift; sourceTree = "<group>"; };
+		FDD64B561AF6A73C0097A9F8 /* TimelineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDD64B571AF6A73C0097A9F8 /* TimelineCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimelineCollectionViewCell.xib; sourceTree = "<group>"; };
+		FDDE4EE91AF6D6CC00EDEB05 /* SelectedChallengeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedChallengeTableViewController.swift; sourceTree = "<group>"; };
+		FDDE4EEB1AF707A800EDEB05 /* SelectedChallengeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedChallengeTableViewCell.swift; sourceTree = "<group>"; };
 		FDE0AAC01AEB2D5500A37360 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FDF163B81AED9F5000333B55 /* OneUpsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneUpsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,17 +129,26 @@
 			isa = PBXGroup;
 			children = (
 				FDAEDD071AE9AB6A00DD14DF /* AppDelegate.swift */,
-				FDAEDD091AE9AB6A00DD14DF /* ViewController.swift */,
-				FD550B191AEAD31200932841 /* SelfieTableViewController.swift */,
-				FDE0AAC01AEB2D5500A37360 /* LoginViewController.swift */,
+				FDDE4EE91AF6D6CC00EDEB05 /* SelectedChallengeTableViewController.swift */,
+				FD589F9C1AF00A7300FCED41 /* TimelineTableViewController.swift */,
+				FDD64B541AF6A3690097A9F8 /* TimelineCollectionViewController.swift */,
+				FD589F9E1AF0789200FCED41 /* CameraViewController.swift */,
+				FD589FA21AF07AA500FCED41 /* SearchTableViewController.swift */,
+				FDF163B81AED9F5000333B55 /* OneUpsViewController.swift */,
 				FDAEDD0B1AE9AB6A00DD14DF /* Main.storyboard */,
 				FDAEDD0E1AE9AB6A00DD14DF /* Images.xcassets */,
 				FDAEDD101AE9AB6A00DD14DF /* LaunchScreen.xib */,
 				FDAEDD271AE9AB8100DD14DF /* Frameworks */,
 				FDAEDD051AE9AB6A00DD14DF /* Supporting Files */,
 				FD550B141AEAD23200932841 /* OneUp-Bridging-Header.h */,
-				FD550B1D1AEAD7B100932841 /* SelfieTableViewCell.swift */,
-				FD550B1E1AEAD7B100932841 /* SelfieTableViewCell.xib */,
+				FD589F941AEFF7DB00FCED41 /* RegisterProfileViewController.swift */,
+				FD589F961AEFF95000FCED41 /* RegisterLocationViewController.swift */,
+				FDE0AAC01AEB2D5500A37360 /* LoginViewController.swift */,
+				FD589F981AF00A4E00FCED41 /* TimelineTableViewCell.swift */,
+				FD589F991AF00A4E00FCED41 /* TimelineTableViewCell.xib */,
+				FDD64B561AF6A73C0097A9F8 /* TimelineCollectionViewCell.swift */,
+				FDD64B571AF6A73C0097A9F8 /* TimelineCollectionViewCell.xib */,
+				FDDE4EEB1AF707A800EDEB05 /* SelectedChallengeTableViewCell.swift */,
 			);
 			path = OneUp;
 			sourceTree = "<group>";
@@ -243,8 +270,9 @@
 			files = (
 				FDAEDD0D1AE9AB6A00DD14DF /* Main.storyboard in Resources */,
 				FDAEDD121AE9AB6A00DD14DF /* LaunchScreen.xib in Resources */,
+				FDD64B591AF6A73C0097A9F8 /* TimelineCollectionViewCell.xib in Resources */,
+				FD589F9B1AF00A4F00FCED41 /* TimelineTableViewCell.xib in Resources */,
 				FDAEDD0F1AE9AB6A00DD14DF /* Images.xcassets in Resources */,
-				FD550B201AEAD7B100932841 /* SelfieTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +323,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD550B1A1AEAD31200932841 /* SelfieTableViewController.swift in Sources */,
-				FDAEDD0A1AE9AB6A00DD14DF /* ViewController.swift in Sources */,
+				FD589F951AEFF7DC00FCED41 /* RegisterProfileViewController.swift in Sources */,
+				FD589F971AEFF95000FCED41 /* RegisterLocationViewController.swift in Sources */,
+				FD589F9A1AF00A4F00FCED41 /* TimelineTableViewCell.swift in Sources */,
 				FDAEDD081AE9AB6A00DD14DF /* AppDelegate.swift in Sources */,
+				FD589FA31AF07AA500FCED41 /* SearchTableViewController.swift in Sources */,
+				FDD64B551AF6A3690097A9F8 /* TimelineCollectionViewController.swift in Sources */,
 				FDE0AAC11AEB2D5500A37360 /* LoginViewController.swift in Sources */,
-				FD550B1F1AEAD7B100932841 /* SelfieTableViewCell.swift in Sources */,
+				FD589F9F1AF0789300FCED41 /* CameraViewController.swift in Sources */,
+				FDDE4EEA1AF6D6CC00EDEB05 /* SelectedChallengeTableViewController.swift in Sources */,
+				FDF163B91AED9F5000333B55 /* OneUpsViewController.swift in Sources */,
+				FDD64B581AF6A73C0097A9F8 /* TimelineCollectionViewCell.swift in Sources */,
+				FDDE4EEC1AF707A800EDEB05 /* SelectedChallengeTableViewCell.swift in Sources */,
+				FD589F9D1AF00A7300FCED41 /* TimelineTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

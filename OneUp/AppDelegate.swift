@@ -16,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Parse.setApplicationId("BmQOPmz84bSW1xdXM6Ch8ILdnhqzVP1CQU7YOWY2", clientKey: "leryeppihOHiaDYXQx94eZpwIjYEM9zVwydGBnN7")
-        PFFacebookUtils.initializeFacebookWithLaunchOptions(launchOptions)
+        if let launchOptions = launchOptions {
+            PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        } else {
+            PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions([NSObject:AnyObject]())
+        }
         return true
     }
     
